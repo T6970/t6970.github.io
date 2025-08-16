@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+        
+        :root {
+            --bg-color: #FFFFFF;
+            --text-color: #888888;
+            --border-color: #DDDDDD;
+            --highlight-primary: #07F;
+            --highlight-secondary: #F80;
+            --card-bg: #FFFFFF;
+        }
+        
+        [data-theme="dark"] {
+            --bg-color: #111111;
+            --text-color: #888888;
+            --border-color: #333333;
+            --highlight-primary: #F80;
+            --highlight-secondary: #07F;
+            --card-bg: #111111;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.5;
+            padding: 24px;
+            transition: none;
+        }
+        
+        h1, h2, h3 {
+            color: var(--text-color);
+            font-weight: 500;
+        }
+        
+        a {
+            color: var(--highlight-primary);
+            text-decoration: none;
+        }
+        
+        [data-theme="dark"] a {
+            color: var(--highlight-secondary);
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 16px;
+            transition: none;
+        }
+        
+        .card.highlighted {
+            border-color: var(--highlight-primary);
+        }
+        
+        .card.highlighted-secondary {
+            border-color: var(--highlight-secondary);
+        }
+        
+        .toggle-group {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 24px;
+        }
+        
+        .toggle-button {
+            padding: 8px 16px;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            background-color: var(--card-bg);
+            color: var(--text-color);
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            transition: none;
+        }
+        
+        .toggle-button.active {
+            border-color: var(--highlight-primary);
+            color: var(--highlight-primary);
+        }
+        
+        .toggle-switch {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 26px;
+            margin-bottom: 24px;
+        }
+        
+        .toggle-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        
+        .toggle-slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: var(--border-color);
+            border-radius: 34px;
+            transition: none;
+        }
+        
+        .toggle-slider:before {
+            position: absolute;
+            content: "";
+            height: 18px;
+            width: 18px;
+            left: 4px;
+            bottom: 4px;
+            background-color: var(--card-bg);
+            border-radius: 50%;
+            transition: none;
+        }
+        
+        input:checked + .toggle-slider {
+            background-color: var(--highlight-primary);
+        }
+        
+        input:checked + .toggle-slider:before {
+            transform: translateX(24px);
+        }
+        
+        .checkbox-container {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 24px;
+        }
+        
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .checkbox-item input {
+            appearance: none;
+            width: 18px;
+            height: 18px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            cursor: pointer;
+            transition: none;
+        }
+        
+        .checkbox-item input:checked {
+            background-color: var(--highlight-primary);
+            border-color: var(--highlight-primary);
+        }
+        
+        .demo-section {
+            margin-top: 32px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 24px;
+          }
