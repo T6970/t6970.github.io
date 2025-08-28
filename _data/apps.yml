@@ -1,0 +1,5 @@
+- name: test
+  repo: test
+  description: "something"
+  version: "v0"
+  url: "https://github.com/username/test/releases/latest"
