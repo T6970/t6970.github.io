@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<article>
+
+  <header>
+  
+    <h1>{{ page.title }}</h1>
+    <p><time datetime="{{ page.date | date_to_xmlschema }}">
+      {{ page.date | date: "%B %d, %Y" }}
+    </time></p>
+    
+  </header>
+
+  <section>
+    {{ content }}
+  </section>
+
+  <footer>
+  
+    <p>Filed under: 
+      {% for category in page.categories %}
+        <a href="{{ '/categories/' | append: category | relative_url }}">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+    </p>
+    
+  </footer>
+  
+</article>
