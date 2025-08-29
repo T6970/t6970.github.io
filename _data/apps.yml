@@ -1,5 +1,5 @@
-- name: test
-  repo: test
-  description: "something"
+- name: caLib
+  repo: caLib
+  description: "Cellular automata simulation library in JavaScript"
   version: "v0"
-  url: "https://github.com/username/test/releases/latest"
+  url: "https://github.com/t6970/caLib"
