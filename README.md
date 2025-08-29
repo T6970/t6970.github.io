@@ -4,6 +4,8 @@
 
 ---
 
-I haven't decided how I'm going to use it, the index.html isn't complete yet.
+This site has the aim of putting absolutely no restriction over applications that people need.
+
+
 
 ###### More content coming soon
