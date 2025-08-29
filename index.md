@@ -4,13 +4,14 @@ title: T6970 - Home
 ---
 
 # T6970.github.io
-
 ### Site under construction
+
+This is a site with aim of complete freedom, without locking anything behind paywalls or walls of ads.
 
 ## Explore
 
 - [**Blog**](/blog/)
-- [**Releases**](/app/)
+- [**App Releases**](/app/)
 
 ## Latest Posts
 
