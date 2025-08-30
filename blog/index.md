@@ -3,18 +3,16 @@ layout: default
 title: Blog
 ---
 
-# The Blog
+# The Blog – Recent Posts
 
-Here are the ten most recent posts from our [Blog Discussions](https://github.com/t6970/t6970.github.io/discussions/categories/blog):
+This is the most recent updates of the Blog. 
+For the complete archive, see [All Posts](/blog/all/).
 
 <ul>
-{% for discussion in site.data.blog limit:10 %}
+{% assign recent_posts = site.posts | slice: 0, 10 %}
+{% for post in recent_posts %}
   <li>
-    <a href="{{ discussion.html_url }}">{{ discussion.title }}</a>
-    <br>
-    <small>Posted on {{ discussion.created_at | date: "%B %d, %Y" }}</small>
+    <a href="{{ post.url }}">{{ post.title }}</a> – {{ post.date | date: "%B %d, %Y" }}
   </li>
 {% endfor %}
 </ul>
-
-<p><a href="/blog/all">View all posts →</a></p>
