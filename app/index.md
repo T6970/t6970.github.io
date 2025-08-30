@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Apps
+permalink: /app/
 ---
 
 # Apps & Releases
