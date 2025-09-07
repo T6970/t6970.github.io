@@ -10,24 +10,25 @@
 
 </head>
 <body>
-  
-  <header>
-    <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-    <nav>
-      <a href="{{ '/' | relative_url }}">Home</a>
-      <a href="{{ '/blog/' | relative_url }}">Blog</a>
-      <a href="{{ '/app/' | relative_url }}">Apps</a>
-    </nav>
-  </header>
-
-  <main>
-    {{ content }}
-  </main>
-
+  <div class="container">
+    <header>
+      <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+      <nav>
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/blog/' | relative_url }}">Blog</a>
+        <a href="{{ '/app/' | relative_url }}">Apps</a>
+      </nav>
+    </header>
+  </div>
+  <div class="card">
+    <main>
+      {{ content }}
+    </main>
+  </div>
   <footer>
     <p>&copy; {{ site.time | date: "%Y" }} {{ site.author.name }}</p>
   </footer>
-
+  </div>
 </body>
   
 </html>
