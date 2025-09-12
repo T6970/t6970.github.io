@@ -74,6 +74,25 @@
             border-color: var(--highlight-secondary);
         }
         
+        @media (max-width: 900px) {
+          .container {
+            flex-direction: column;
+          }
+
+          main {
+            margin-right: 0;
+          }
+
+          .sidebar {
+            margin-top: 2rem;
+          }
+        }
+
+        .sidebar {
+          flex: 0 0 250px;
+          min-width: 200px;
+        }
+        
         .toggle-group {
             display: flex;
             gap: 8px;
@@ -169,9 +188,3 @@
             background-color: var(--highlight-primary);
             border-color: var(--highlight-primary);
         }
-        
-        .demo-section {
-            margin-top: 32px;
-            border-top: 1px solid var(--border-color);
-            padding-top: 24px;
-          }
