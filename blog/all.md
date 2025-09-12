@@ -1,18 +1,8 @@
 ---
 layout: default
-title: All Blog Posts
+title: All Discussions
+permalink: /blog/all/
 ---
 
-# All Blog Posts
-
-Here’s a complete archive of posts in the **Blog** thread.  
-
-<ul>
-{% for post in site.posts %}
-  <li>
-    <a href="{{ post.url }}">{{ post.title }}</a> – {{ post.date | date: "%B %d, %Y" }}
-  </li>
-{% endfor %}
-</ul>
-
-<p><a href="/blog/">← Back to Recent Posts</a></p>
+<meta http-equiv="refresh" content="0; url=https://github.com/T6970/t6970.github.io/discussions/2" />
+<p>If you are not redirected automatically, <a href="https://github.com/T6970/t6970.github.io/discussions/2">click here</a>.</p>
