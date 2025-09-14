@@ -188,3 +188,37 @@
             background-color: var(--highlight-primary);
             border-color: var(--highlight-primary);
         }
+
+        .discussion-card {
+          background: #fff;
+          border: 1px solid #ddd;
+          border-radius: 6px;
+          padding: 1rem;
+          margin: 1rem 0;
+          box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .discussion-header {
+          font-size: 0.9rem;
+          color: #555;
+          margin-bottom: 0.5rem;
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .discussion-body {
+          margin: 0.5rem 0;
+          line-height: 1.5;
+          white-space: pre-wrap; /* preserve line breaks */
+        }
+
+        .discussion-footer {
+          margin-top: 0.75rem;
+        }
+
+        .discussion-footer a {
+          text-decoration: none;
+          color: #0066cc;
+          font-weight: bold;
+        }
+
