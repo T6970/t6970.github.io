@@ -1,6 +1,6 @@
 ---
 layout: default
-title: T6970 - Home
+title: Home
 ---
 
 # T6970.github.io
