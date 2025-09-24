@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<h1>Ugh.</h1>
+<div id="message">This page doesn't exist (yet).</div>
+
+<script>
+  const messages = [
+    "This website is still under heavy construction, expect more 404s.",
+    "Broken link found.",
+    "Will this page ever be found?",
+    "You're ahead of time. It haven't existed yet.",
+    "Smells like empty. When will I fill it? Not sure."
+    "You may make a request of this page. Or not."
+    "What you're looking at now is the most famous HTTP error."
+    'We found..."404 not".'
+  ];
+  
+   const msg = messages[Math.floor(Math.random() * messages.length)];
+   document.getElementById("message").innerText = msg;
+</script>
