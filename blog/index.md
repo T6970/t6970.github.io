@@ -23,20 +23,18 @@ async function fetchDiscussions() {
     // Create cards for each comment
     container.innerHTML = data.slice(0, 10).map(d => `
       <div class="discussion-card">
+        <div class="discussion-body">
+          ${d.body_html || d.body}
+        </div>
         <div class="discussion-header">
           <strong>${d.user.login}</strong> 
           <span class="discussion-date">${new Date(d.created_at).toLocaleString()}</span>
         </div>
-        <div class="discussion-body">
-          ${d.body_html || d.body}
-        </div>
-        <div class="discussion-footer">
-          <a href="${d.html_url}" target="_blank">View on GitHub ↗</a>
-        </div>
       </div>
     `).join('');
   } catch(e) {
-    document.getElementById('latest-discussions').innerText = 'Unable to load discussions.';
+    console.error(e);
+    document.getElementById('latest-discussions').innerText = `Unable to load discussions because ${e.message}.`;
   }
 }
 fetchDiscussions();
