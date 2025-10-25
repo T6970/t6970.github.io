@@ -1,13 +1,12 @@
 # T6970.github.io
-
-## Site under construction (maybe for a while)
-
+#### Site under reinnovation (because of minimal dependency movement)
 ---
+This site has aim of:
+- **Security**: apart from the server that serves the content, there's no backend to collect your data.
+- **Simplicity**: only HTML, CSS and client-side JS are used for this website as well as my other applications.
+- **Independency**: no external dependencies that can cause bugs
 
-This site has the aim of putting absolutely no restriction over applications that people need.
-
-
-
-# Current contents
-- caLib - cellular automata simulation library written in JavaScript
-- Onlice - merge of office suites
+# Current apps
+- **caLib** - cellular automata simulation library written in JavaScript
+- **Onlice** - merge of office suites
+- **Very Visual SCE** - source code editor with visual twist
