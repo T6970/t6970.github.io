@@ -4,13 +4,19 @@
   color: #222;
   --card-color: #eee;
   --highlight-color: #08f;
+  --width: 50px;
+}
 
-  @media (prefers-color-scheme: dark) {
-    background-color: #222;
-    color: #fff;
-    --card-color: #333;
-    --highlight-color: #f80;
-  }
+@media (prefers-color-scheme: dark) {
+  background-color: #222;
+  color: #fff;
+  --card-color: #333;
+  --highlight-color: #f80;
+}
+
+div {
+  width: 500px;
+  margin: 0 auto;
 }
 
 p {
@@ -18,16 +24,20 @@ p {
   margin: 20px;
   padding: 20px;
   border-radius: 8px;
+  max-width: var(--width);
 }
 
 a {
   color: var(--highlight-color);
+  max-width: var(--width);
 }
 
 header {
   background-color: var(--highlight-color);
-  margin: 0px;
+  margin: 0%;
   padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6 {
