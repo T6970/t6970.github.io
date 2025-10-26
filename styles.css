@@ -4,15 +4,14 @@
   color: #222;
   --card-color: #eee;
   --highlight-color: #08f;
-}
 
-@media (prefers-color-scheme: dark) {
-  background-color: #222;
-  color: #fff;
-  --card-color: #333;
-  --highlight-color: #f80;
+  @media (prefers-color-scheme: dark) {
+    background-color: #222;
+    color: #fff;
+    --card-color: #333;
+    --highlight-color: #f80;
+  }
 }
-
 
 p {
   background-color: var(--card-color);
