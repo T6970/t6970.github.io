@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       container.innerHTML = data
-        .reverse
+        .reverse()
         .slice(0,10)
         .map(d => `
           <div class="discussion-card">
