@@ -38,10 +38,11 @@ document.addEventListener('DOMContentLoaded', () => {
         .map(d => `
           <div class="discussion-card">
             <div class="discussion-header">
-              <strong>${d.user.login}</strong>
+              <h2>${d.user.login}</h2>
               <span class="discussion-date">${new Date(d.created_at).toLocaleString()}</span>
             </div>
             <div class="discussion-body">${d.body}</div>
+            <br>
           </div>
         `)
         .join('');
