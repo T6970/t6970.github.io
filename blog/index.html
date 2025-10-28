@@ -37,12 +37,12 @@ document.addEventListener('DOMContentLoaded', () => {
         .reverse()
         .slice(0,10)
         .map(d => `
-          <div class="discussion-card">
-            <div class="discussion-header">
+          <div class="card">
+            <div>
               <h2>${d.user.login}</h2>
-              <span class="discussion-date">${new Date(d.created_at).toLocaleString()}</span>
+              <span class="center">${new Date(d.created_at).toLocaleString()}</span>
             </div>
-            <div class="discussion-body">${d.body}</div>
+            <div>${d.body}</div>
             <br>
           </div>
         `)
