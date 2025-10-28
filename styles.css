@@ -4,7 +4,6 @@
   color: #222;
   --card-color: #eee;
   --highlight-color: #08f;
-  --width: 50px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,12 +20,10 @@ div {
   margin: 20px;
   padding: 20px;
   border-radius: 8px;
-  max-width: var(--width);
 }
 
 a {
   color: var(--highlight-color);
-  max-width: var(--width);
 }
 
 header {
