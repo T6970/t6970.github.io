@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>404 Not Found!! | T6970</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+  
+<div class="header">
+  <h1>T6970.github.io</h1>
+  <p class="center">
+    404 Not Found
+  </p>
+</div>
+<div class="card" id="message">This page doesn't exist (yet).</div>
+
+<footer>
+  <div class="card">
+    <div class="center">
+      <a href="/blog/">Blog</a> | <a href="/app/">Apps</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+const messages = [
+    "This website is still under heavy construction, expect more 404s.",
+    "Broken link found. Go <a href=\"https://github.com/T6970/t6970.github.io\">here</a> to help me fix it.",
+    "Will this page ever be found?",
+    "You're ahead of time. It has not existed yet.",
+    "Smells like empty. When will I fill it? Not sure.",
+    "You may make a request of this page. Or not.",
+    "What you're looking at now is the most famous HTTP error. What does it mean?",
+    'We found..."404 not".',
+    "We had probably lost it under the couch. Or not.",
+    "If you really want this page to exist, Go <a href=\"https://github.com/T6970/t6970.github.io\">here</a> and make it yourself.",
+    "Uncharted territory be like:"
+  ];
+  
+   document.getElementById("message").innerHTML = messages[Math.floor(Math.random() * messages.length)];
+</script>
