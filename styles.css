@@ -29,7 +29,12 @@ header {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-align: center;
 }
 
@@ -37,11 +42,24 @@ h1, h2, h3, h4, h5, h6 {
 
 .card {
   margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
   background-color: var(--card-color);
   padding: 20px;
+  max-width: 700px;
   border-radius: 8px;
 }
 
 .center {
   text-align: center;
+}
+
+.header {
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: var(--highlight-color);
+  padding: 20px;
+  max-width: 700px;
+  border-radius: 8px;
 }
