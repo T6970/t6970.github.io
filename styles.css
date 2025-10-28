@@ -17,9 +17,6 @@
 div {
   width: 500px;
   margin: 0 auto;
-}
-
-p {
   background-color: var(--card-color);
   margin: 20px;
   padding: 20px;
