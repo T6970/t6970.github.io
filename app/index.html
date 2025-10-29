@@ -21,13 +21,13 @@
   
 <script>
 const list = document.getElementById("list");
-const apps = parseTable(await fetch(/app/applist.txt));
+const apps = parseTable(await fetch("/app/applist.txt"));
 if (!apps.ok) list.insertAdjacentHTML("beforeend", `<div class="nest card"><p class="center">Can't load list because ${res.statusText}</p></div>`);
 
 apps.forEach((app) => {
   const element = `
   <div class="nest card">
-    <h2>${app.name}</h2>
+    <h2><a href="/${app.name}">${app.name}</a></h2>
     <h3>${app.summary}</h3>
     <p>${app.descripton}</p>
   </div>
