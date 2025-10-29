@@ -15,13 +15,36 @@
   </p>
 </div>
 
-<div class="card">
-Here's the list of apps:
-<div class="nest card"></div>
-<div class="nest card"></div>
-<div class="nest card"></div>
-
+<div class="card" id="list">
+  Here's the list of apps:
 </div>
+  
+<script>
+const list = document.getElementById("list");
+const apps = parseTable(await fetch(/app/applist.txt));
+if (!apps.ok) list.insertAdjacentHTML("beforeend", `<div class="nest card"><p class="center">Can't load list because ${res.statusText}</p></div>`);
+
+apps.forEach((app) => {
+  const element = `
+  <div class="nest card">
+    <h2>${app.name}</h2>
+    <h3>${app.summary}</h3>
+    <p>${app.descripton}</p>
+  </div>
+  `;
+  list.insertAdjacentHTML('beforeend', element);
+})
+
+function parseTable {
+const lines = input.trim().split('\n');
+const headers = lines[0].split('|').map(h => h.trim());
+
+const rows = lines.slice(1).map(line => {
+  const values = line.split('|').map(v => v.trim());
+  return Object.fromEntries(headers.map((h, i) => [h, values[i]]));
+});
+}
+</script>
   
 <script src="/snippets/footer.js"></script>
 
