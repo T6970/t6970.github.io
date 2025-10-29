@@ -1,5 +1,5 @@
 (async () => {
-  const ticker = document.getElementById("list");
+  const ticker = document.getElementById("newsticker");
 
   try {
     const news = await fetch("/snippets/news.txt");
