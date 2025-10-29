@@ -1,0 +1,3 @@
+name   | summary             | description
+Onlice | Online office suite | This is a \"generic\" office suite merged into one, written in HTML + JS, entirely in browser.
+VV SCE | Source code editor  | A source code editor that helps with coding a lot by having a sidebar of snippets categorized.
