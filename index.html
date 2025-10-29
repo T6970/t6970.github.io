@@ -23,12 +23,14 @@
       Security - apart from the server that serves the content, there's no
       backend to collect your data.
     </li>
+    <br>
     <li>
       Simplicity - only HTML, CSS and client-side JS are used for this website
       as well as my other applications.
     </li>
+    <br>
     <li>
-      Self-contained: no external dependencies that can cause bugs or been
+      Self-contained - no external dependencies that can cause bugs or been
       compromised.
     </li>
   </ul>
@@ -37,8 +39,8 @@
 <div class="card">
   <h2>Explore</h2>
   <el class="center">
-    <li><a href="/blog/">Blog</a></li>
-    <li><a href="/app/">App Releases</a></li>
+    <li><a href="/blog/">Blog</a> - My blog of various stuffs.</li>
+    <li><a href="/app/">App Releases</a> - Suite of open source apps.</li>
   </el>
 </div>
   
@@ -47,7 +49,16 @@
 
 <noscript>
   <div class="card">
-    <p>Please enable JS because some functions of the site requires it. Don't worry, this is a static server, meaning that there's no backend to scrape your data or do whatever.</p>
+    <p>
+      Please enable JS because some functions of the site requires it. Don't worry, this is a static server, meaning that there's no backend to scrape your data or do whatever.
+      <br>
+      JS is needed for:
+      <el>
+        <li>Footer (this may be strange, but footer is synchronized across pages)</li>
+        <li>News ticker (HTML alone can't do that at all)</li>
+        <li>Blog (posts are fetched from GitHub Discussions)</li>
+      </el>
+    </p>
   </div>
 </noscript>
 
