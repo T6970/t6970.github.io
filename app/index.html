@@ -49,7 +49,7 @@
   }
 })();
 
-function parseTable () {
+function parseTable (input) {
 const lines = input.trim().split('\n');
 const headers = lines[0].split('|').map(h => h.trim());
 
