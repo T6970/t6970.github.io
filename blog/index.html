@@ -1,62 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Blog | T6970</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/styles.css">
-</head>
-  
-<body>
-  
-<div class="header">
-  <h1>T6970.github.io</h1>
-  <p class="center">Blog - Newest posts</p>
-</div>
-<div class="card">
-  <div id="latest-discussions">Loading... (if posts don't load, then something went wrong)</div>
-</div>
+  <head>
+    <title>Blog | T6970</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
 
+  <body>
+    <div class="header">
+      <h1>T6970.github.io</h1>
+      <p class="center">Blog - Newest posts</p>
+    </div>
+    <div class="card">
+      <div id="latest-discussions">
+        Loading... (if posts don't load, then something went wrong)
+      </div>
+    </div>
 
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  async function fetchDiscussions() {
-    const container = document.getElementById('latest-discussions');
-    try {
-      const res = await fetch(
-        'https://api.github.com/repos/T6970/t6970.github.io/discussions/2/comments',
-        { headers: { Accept: 'application/vnd.github.v3+json' } }
-      );
-      const data = await res.json();
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        async function fetchDiscussions() {
+          const container = document.getElementById('latest-discussions');
+          try {
+            const res = await fetch(
+              'https://api.github.com/repos/T6970/t6970.github.io/discussions/2/comments',
+              { headers: { Accept: 'application/vnd.github.v3+json' } }
+            );
+            const data = await res.json();
 
-      if (!Array.isArray(data)) {
-        container.innerText = 'No comments found or invalid response.';
-        return;
-      }
+            if (!Array.isArray(data)) {
+              container.innerText = 'No comments found or invalid response.';
+              return;
+            }
 
-      container.innerHTML = data
-        .reverse()
-        .slice(0,10)
-        .map(d => `
-          <div class="card">
-            <div>
-              <h2>${d.user.login}</h2>
-              <span class="center">${new Date(d.created_at).toLocaleString()}</span>
-            </div>
-            <div>${d.body}</div>
-            <br>
-          </div>
-        `)
-        .join('');
-    } catch (e) {
-      console.error(e);
-      container.innerText = `Unable to load discussions because ${e.message}.`;
-    }
-  }
+            container.innerHTML = data
+              .reverse()
+              .slice(0,10)
+              .map(d => `
+                <div class="card">
+                  <div>
+                    <h2>${d.user.login}</h2>
+                    <span class="center">${new Date(d.created_at).toLocaleString()}</span>
+                  </div>
+                  <div>${d.body}</div>
+                  <br>
+                </div>
+              `)
+              .join('');
+          } catch (e) {
+            console.error(e);
+            container.innerText = `Unable to load discussions because ${e.message}.`;
+          }
+        }
 
-  fetchDiscussions();
-});
-</script>
-<script src="/snippets/footer.js"></script>
-  
-</body>
+        fetchDiscussions();
+      });
+    </script>
+    <script src="/snippets/footer.js"></script>
+  </body>
+</html>
