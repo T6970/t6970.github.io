@@ -52,10 +52,10 @@
         const rows = lines.slice(1).map(line => {
           const values = line.split('|').map(v => v.trim());
           return Object.fromEntries(headers.map((h, i) => [h, values[i]]));
-
+        });
         return rows
-      };
-    };
+      }
+    }
     </script>
 
     <script src="/snippets/footer.js"></script>
