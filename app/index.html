@@ -46,16 +46,16 @@
       })();
 
       function parseTable (input) {
-      const lines = input.trim().split('\n');
-      const headers = lines[0].split('|').map(h => h.trim());
+        const lines = input.trim().split('\n');
+        const headers = lines[0].split('|').map(h => h.trim());
 
-      const rows = lines.slice(1).map(line => {
-        const values = line.split('|').map(v => v.trim());
-        return Object.fromEntries(headers.map((h, i) => [h, values[i]]));
+        const rows = lines.slice(1).map(line => {
+          const values = line.split('|').map(v => v.trim());
+          return Object.fromEntries(headers.map((h, i) => [h, values[i]]));
 
-      return rows
+        return rows
       };
-      });
+    };
     </script>
 
     <script src="/snippets/footer.js"></script>
