@@ -5,6 +5,7 @@
   --card-color: #eee;
   --nest-card-color: #ccc;
   --highlight-color: #08f;
+  --highlight-alt-color: #f80;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -12,6 +13,7 @@
     --card-color: #333;
     --nest-card-color: #555;
     --highlight-color: #f80;
+    --highlight-alt-color: #08f;
   }
   body {
     background-color: #222;
@@ -54,6 +56,14 @@ h6 {
 
 .nest {
   background-color: var(--nest-card-color);
+}
+
+.altcard {
+  background-color: var(--highlight-alt-color);
+}
+
+.altlink {
+  color: var(--highlight-alt-color);
 }
 
 .center {
