@@ -1,70 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Apps | T6970</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/styles.css">
-</head>
-  
-<body>
+  <head>
+    <title>Apps | T6970</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
 
-<div class="header">
-  <h1>T6970.github.io</h1>
-  <p class="center">
-    Apps
-  </p>
-</div>
+  <body>
+    <div class="header">
+      <h1>T6970.github.io</h1>
+      <p class="center">Apps</p>
+    </div>
 
-<div class="card" id="list">
-  Here's the list of apps:
-</div>
-  
-<script>
-  
-(async () => {
-  const list = document.getElementById("list");
+    <div class="card" id="list">Here's the list of apps:</div>
 
-  try {
-    const res = await fetch("/app/applist.txt");
-    if (!res.ok) {
-      list.insertAdjacentHTML("beforeend", `<div class="nest card"><p class="center">Can't load list because ${res.statusText}</p></div>`);
-      return;
-    }
+    <script>
 
-    const text = await res.text();
-    const apps = parseTable(text);
+      (async () => {
+        const list = document.getElementById("list");
 
-    apps.forEach(app => {
-      const element = `
-        <div class="nest card">
-          <h2><a href="/${app.name}">${app.name}</a></h2>
-          <h3>${app.summary}</h3>
-          <p>${app.description || ""}</p>
-        </div>
-      `;
-      list.insertAdjacentHTML('beforeend', element);
-    });
-  } catch (err) {
-    list.insertAdjacentHTML("beforeend", `<div class="nest card"><p class="center">Error: ${err.message}</p></div>`);
-  }
-})();
+        try {
+          const res = await fetch("/app/applist.txt");
+          if (!res.ok) {
+            list.insertAdjacentHTML("beforeend", `<div class="nest card"><p class="center">Can't load list because ${res.statusText}</p></div>`);
+            return;
+          }
 
-function parseTable (input) {
-const lines = input.trim().split('\n');
-const headers = lines[0].split('|').map(h => h.trim());
+          const text = await res.text();
+          const apps = parseTable(text);
 
-const rows = lines.slice(1).map(line => {
-  const values = line.split('|').map(v => v.trim());
-  return Object.fromEntries(headers.map((h, i) => [h, values[i]]));
+          apps.forEach(app => {
+            const element = `
+              <div class="nest card">
+                <h2><a href="/${app.name}">${app.name}</a></h2>
+                <h3>${app.summary}</h3>
+                <p>${app.description || ""}</p>
+              </div>
+            `;
+            list.insertAdjacentHTML('beforeend', element);
+          });
+        } catch (err) {
+          list.insertAdjacentHTML("beforeend", `<div class="nest card"><p class="center">Error: ${err.message}</p></div>`);
+        }
+      })();
 
-return rows
-};
-});
+      function parseTable (input) {
+      const lines = input.trim().split('\n');
+      const headers = lines[0].split('|').map(h => h.trim());
 
+      const rows = lines.slice(1).map(line => {
+        const values = line.split('|').map(v => v.trim());
+        return Object.fromEntries(headers.map((h, i) => [h, values[i]]));
 
-</script>
-  
-<script src="/snippets/footer.js"></script>
+      return rows
+      };
+      });
+    </script>
 
-</body>
+    <script src="/snippets/footer.js"></script>
+  </body>
+</html>
