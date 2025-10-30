@@ -3,12 +3,14 @@
   background-color: #fff;
   color: #222;
   --card-color: #eee;
+  --nest-card-color: #ccc
   --highlight-color: #08f;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --card-color: #333;
+    --nest-card-color: #555;
     --highlight-color: #f80;
   }
   body {
@@ -48,6 +50,10 @@ h6 {
   padding: 20px;
   max-width: 700px;
   border-radius: 8px;
+}
+
+.nest {
+  background-color: var(--nest-card-color);
 }
 
 .center {
