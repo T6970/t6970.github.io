@@ -1,4 +1,4 @@
 Site under construction
 Site under really really heavy construction, probably halfway complete
 Maybe 50% incomplete
-Open source, see <a href="https://github.com/T6970/t6970.github.io">here</a> for more info
+Open source, see <a href="https://github.com/T6970/t6970.github.io" class="altlink">here</a> for more info
