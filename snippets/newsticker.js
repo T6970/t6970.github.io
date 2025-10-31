@@ -4,7 +4,7 @@
   try {
     const news = await fetch("/snippets/news.txt");
     if (!news.ok) {
-      throw new Error("Error fetching news ticker"));
+      throw new Error("Error fetching news ticker");
       return
     }
 
