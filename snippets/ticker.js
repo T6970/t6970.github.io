@@ -1,14 +1,14 @@
 (async () => {
-  const ticker = document.getElementById("newsticker");
+  const ticker = document.getElementById("ticker");
 
   try {
-    const news = await fetch("/snippets/news.txt");
-    if (!news.ok) {
-      throw new Error("Error fetching news ticker");
+    const splash = await fetch("/snippets/splash.txt");
+    if (!splash.ok) {
+      throw new Error("Error fetching splashes");
       return
     }
 
-    const texts = await news.text();
+    const texts = await splash.text();
     const text  = texts.split("\n")[Math.floor(Math.random()*(texts.split("\n").length))];
     console.log(text);
     ticker.innerHTML = `<p class="center">${text}</p>`
