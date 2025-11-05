@@ -38,7 +38,7 @@
               .reverse()
               .slice(0,10)
               .map(d => `
-                <div class="card">
+                <div class="nest card">
                   <div>
                     <h2>${d.user.login}</h2>
                     <span class="center">${new Date(d.created_at).toLocaleString()}</span>
