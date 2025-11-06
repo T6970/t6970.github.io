@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>404 Not Found!! | T6970</title>
+  <title id="title">404 Not Found!! | T6970</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/styles.css">
@@ -18,7 +18,7 @@
 <script src="/snippets/footer.js"></script>
 
 <script>
-const messages = [
+  const mainMessages = [
     "This website is still under heavy construction, expect more 404s.",
     "Broken link found. Go <a href=\"https://github.com/T6970/t6970.github.io\">here</a> to help me fix it.",
     "Will this page ever be found?",
@@ -31,6 +31,14 @@ const messages = [
     "If you really want this page to exist, Go <a href=\"https://github.com/T6970/t6970.github.io\">here</a> and make it yourself.",
     "Uncharted territory be like:"
   ];
+  const titleMessages = [
+    "404 Not Found!!",
+    "404: Definitely not found.",
+    "That's all we know.",
+    "Error 4O4",
+    "Nothing here"
+  ];
   
-   document.getElementById("message").innerHTML = messages[Math.floor(Math.random() * messages.length)];
+  document.getElementById("message").innerHTML =    mainMessages [Math.floor(Math.random() * mainMessages. length)];
+  document.getElementById("message").innerHTML = `${titleMessages[Math.floor(Math.random() * titleMessages.length)]} | T6970`;
 </script>
