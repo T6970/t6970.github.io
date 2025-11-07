@@ -24,3 +24,5 @@ The name of JavaScript is one of the biggest lies in the universe.
 0% KotlinScript!
 No syntax highlighting, sorry. That's the job of my editors.
 200 Found
+I won't use em dashes, or else everyone will confuse me with AI.
+There's a backend, technically. It's for sending the pages to you.
