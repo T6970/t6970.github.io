@@ -1,7 +1,7 @@
 Homepage
 Site under construction, probably tremidemisemihemiquarterpastquarterethalfway complete
 Maybe 30% incomplete
-Open source, see <a href="https://github.com/T6970/t6970.github.io" class="altlink">here</a> for more info
+In case you suspect malice, <a href="https://github.com/T6970/t6970.github.io" class="altlink">here</a> is the complete source.
 No closed source unless there is no source
 Static! Not static electricity through.
 0.01% AI slop...???
@@ -26,3 +26,5 @@ No syntax highlighting, sorry. That's the job of my editors.
 200 Found
 I won't use em dashes, or else everyone will confuse me with AI.
 There's a backend, technically. It's for sending the pages to you.
+dummy string
+There's no way I can use a dynamic backend.
