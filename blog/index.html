@@ -43,8 +43,8 @@
               .map(d => `
                 <div class="nest card">
                   <div>
-                    <h2>${d.user.login}</h2>
-                    <span class="center">${new Date(d.created_at).toLocaleString()}</span>
+                    <h2>${new Date(d.created_at).toLocaleString()}</h2>
+                    
                   </div>
                   <div>${d.body}</div>
                   <br>
