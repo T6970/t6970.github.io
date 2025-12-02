@@ -1,4 +1,4 @@
 name            | summary             | description
 Onlice          | Online office suite | This is a "generic" office suite merged into one, written in HTML + JS, entirely in browser.
-VVSCE           | Source code editor  | A source code editor that helps with coding a lot by having a sidebar of snippets categorized.
+Nqde            | Modular text editor | A very text editor with extension capabilities
 RuletableGolfer | Rulegolfing helper  | A tool to help making multistate ruletables or 2-state INT rules in Hensel notation.
