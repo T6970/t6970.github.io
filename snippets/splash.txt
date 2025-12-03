@@ -28,3 +28,5 @@ I won't use em dashes, or else everyone will confuse me with AI.
 There's a backend, technically. It's for sending the pages to you.
 dummy string
 There's no way I can use a dynamic backend.
+68
+I prefer the term free as in both contexts.
