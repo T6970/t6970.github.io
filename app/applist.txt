@@ -1,4 +1,4 @@
 name            | summary             | description
 Onlice          | Online office suite | This is a "generic" office suite merged into one, written in HTML + JS, entirely in browser.
-Nqde            | Modular text editor | A very text editor with extension capabilities
+Nqde            | UI framework        | A "desktop environment" for web applications
 RuletableGolfer | Rulegolfing helper  | A tool to help making multistate ruletables or 2-state INT rules in Hensel notation.
