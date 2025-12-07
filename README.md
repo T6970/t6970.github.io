@@ -9,4 +9,4 @@ This site has aim of:
 # Current apps
 - **caLib** - cellular automata simulation library written in JavaScript
 - **Onlice** - merge of office suites
-- **Nqde** - graphical "DE" for webapps
+- **Nqde** - graphical "desktop environment" for webapps
