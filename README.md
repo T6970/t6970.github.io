@@ -1,5 +1,4 @@
 # T6970.github.io
-#### Site under reinnovation (because of minimal dependency movement)
 ---
 This site has aim of:
 - **Security**: apart from the server that serves the content, there's no backend to collect your data.
