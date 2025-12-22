@@ -30,3 +30,4 @@ dummy string
 There's no way I can use a dynamic backend.
 I prefer to ditch usage of "free" entirely and just use "libre" and "gratis".
 I propose to use "open source" for those licensed under permissive and "libre software" for those under copyleft.
+There's no gratis lunch. However, there's libre lunch which you know how it's exactly made.
