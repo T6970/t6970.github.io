@@ -44,6 +44,10 @@ h6 {
   text-align: center;
 }
 
+ul {
+  list-style-position: inside;
+}
+
 * {
   transition: all 0.3s ease;
 }
