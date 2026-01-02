@@ -12,7 +12,7 @@ This site has aim of:
 - **INT-minesewwper** - Minesweeper but in Hensel notation
 
 # Copyright
-Copyright (C) 2025  T6970
+Copyright (C) 2026  T6970
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published
