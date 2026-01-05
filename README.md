@@ -6,10 +6,8 @@ This site has aim of:
 - **Independency**: no external dependencies that can cause bugs
 
 # Current apps
-- **caLib** - cellular automata simulation library written in JavaScript
 - **Onlice** - merge of office suites
-- **Nqde** - graphical "desktop environment" for webapps
-- **INT-minesewwper** - Minesweeper but in Hensel notation
+- **INT-minesweeper** - Minesweeper but in Hensel notation
 
 # Copyright
 Copyright (C) 2026  T6970
